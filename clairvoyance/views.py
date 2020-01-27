@@ -55,3 +55,11 @@ def logoutUser(request):
 @login_required(login_url='login')
 def home(request):
 	return render(request, 'clairvoyance/homepage.html')
+
+@login_required(login_url='login')
+def category(request):
+	categories = Category.objects.all()
+
+	context = {'categories':categories}
+
+	return render(request, 'clairvoyance/homepage.html', context)

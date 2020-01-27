@@ -9,4 +9,5 @@ urlpatterns = [
 
 
     path('', views.home, name="home"),
+    path('category/', views.category, name='category')
 ]
