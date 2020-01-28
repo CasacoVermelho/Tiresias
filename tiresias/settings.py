@@ -25,7 +25,9 @@ SECRET_KEY = '3_5vsicwo26^o_gch82k%+!h%bjb-%0)_j173e^ibb&n!n#$4@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'tiresias-bot.herokuapp.com'
+]
 
 
 # Application definition
